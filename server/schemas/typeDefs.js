@@ -9,18 +9,20 @@ const typeDefs = gql`
     thoughts: [Thought]!
   }
 
-  type Thought {
+  type Dog {
     _id: ID
-    thoughtText: String
-    thoughtAuthor: String
+    name: String
+    age: String
+    breed: String
     createdAt: String
     comments: [Comment]!
   }
 
   type Comment {
     _id: ID
-    commentText: String
-    commentAuthor: String
+    name: String
+    age: String
+    breed: String
     createdAt: String
   }
 
