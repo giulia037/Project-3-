@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Wiggles",
+    "age": 1,
+    "breed": "Corgi"
+  },
+  {
+    "name": "Sugar",
+    "age": 3,
+    "breed": "Maltese"
+  },
+  {
+    "name": "Scrappy",
+    "age": 2,
+    "breed": "Chihuahua"
+  },
+  {
+    "name": "Noodle",
+    "age": 5,
+    "breed": "Goldendoodle"
+  },
+  {
+    "name": "Harley",
+    "age": 3,
+    "breed": "Border Collie"
+  }
+  ,
+  {
+    "name": "Pepper",
+    "age": 4,
+    "breed": "Jack Russell Terrier"
+  }
+  
+]
