@@ -4,10 +4,11 @@ const dogsSeeds = require('./dogsSeeds.json');
 const userSeeds = require('./userSeeds.json');
 
 db.once('open', async () => {
-  await Dogs.deleteMany({});
   await Dogs.create(dogsSeeds);
-  await User.deleteMany({});
+  await Dogs.deleteMany({});
   await User.create(userSeeds);
+  await User.deleteMany({});
+
 
   console.log('all done!');
   process.exit(0);
