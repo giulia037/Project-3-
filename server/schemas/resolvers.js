@@ -36,6 +36,11 @@ const resolvers = {
       return { token, user };
     }
   },
+  addDog: async (parent, { name, age, breed }) => {
+    const dog = await Dog.create({ name, age, breed });
+    const token = signToken(dog);
+    return { token, dog };
+  },
 };
 
 module.exports = resolvers;
