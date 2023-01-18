@@ -9,7 +9,7 @@ const typeDefs = gql`
 
   type Dog {
     name: String
-    age: String
+    age: Int
     breed: String
   }
 
@@ -20,16 +20,15 @@ const typeDefs = gql`
 
   type Query {
     users: [User]
-    user(username: String!): 
+    user(username: String!): User
+    dogs: [Dog]
+    dog(dogId: ID!): Dog
+    me: User 
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
-    addThought(thoughtText: String!): Thought
-    addComment(thoughtId: ID!, commentText: String!): Thought
-    removeThought(thoughtId: ID!): Thought
-    removeComment(thoughtId: ID!, commentId: ID!): Thought
   }
 `;
 
