@@ -1,13 +1,14 @@
 const db = require('../config/connection');
-const { User, Dogs } = require('../models');
+const { User, Dog } = require('../models');
 const dogsSeeds = require('./dogsSeeds.json');
 const userSeeds = require('./userSeeds.json');
 
 db.once('open', async () => {
-  await Dogs.create(dogsSeeds);
-  await Dogs.deleteMany({});
-  await User.create(userSeeds);
+  await Dog.deleteMany({});
   await User.deleteMany({});
+  await Dog.create(dogsSeeds);
+  await User.create(userSeeds);
+  
 
 
   console.log('all done!');
