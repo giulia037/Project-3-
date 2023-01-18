@@ -10,11 +10,11 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
-    dogs: async () => {
+/*     dogs: async () => {
       return Dog.find();
       dogs: async (parent, { name }) => {
       return Dog.findOne({ name });}
-    }
+    } */
   },
 
   Mutation: {
@@ -39,13 +39,13 @@ const resolvers = {
       const token = signToken(user);
 
       return { token, user };
-    }
-  },
+    },
+  
   addDog: async (parent, { name, age, breed }) => {
     const dog = await Dog.create({ name, age, breed });
-    const token = signToken(dog);
-    return { token, dog };
-  },
-};
+    return dog;
+  }
+ } 
+}
 
 module.exports = resolvers;
