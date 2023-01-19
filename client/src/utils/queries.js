@@ -14,7 +14,27 @@ export const QUERY_USER = gql`
     }
   }
 `;
+export const QUERY_DOG = gql`
+  query getDog {
+    thoughts {
+      _id
+      name
+      age
+      breed
+    }
+  }
+`;
 
+export const QUERY_SINGLE_DOG = gql`
+  query getSingleDog($DogId: ID!) {
+    Dog(dogId: $dogId) {
+      _id
+      name
+      age
+      breed 
+    }
+  }
+`;
 export const QUERY_THOUGHTS = gql`
   query getThoughts {
     thoughts {
