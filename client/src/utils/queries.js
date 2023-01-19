@@ -25,8 +25,8 @@ export const QUERY_DOG = gql`
 `;
 
 export const QUERY_SINGLE_DOG = gql`
-  query getSingleDog($DogId: ID!) {
-    Dog(dogId: $dogId) {
+  query getSingleDog($DogName: Name!) {
+    Dog(dogName: $dogName) {
       name
     }
   }
