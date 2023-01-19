@@ -13,8 +13,8 @@ const resolvers = {
     dog: async () => {
       return Dog.find();
     },
-      dog: async (parent, { name, age, breed }) => {
-      return Dog.findOne({ name, age, breed });
+      dog: async (parent, { name }) => {
+      return Dog.findOne({ name });
     }    
   },
 
