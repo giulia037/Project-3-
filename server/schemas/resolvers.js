@@ -10,11 +10,12 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
-/*     dogs: async () => {
+    dog: async () => {
       return Dog.find();
-      dogs: async (parent, { name }) => {
-      return Dog.findOne({ name });}
-    } */
+    },
+      dog: async (parent, { name, age, breed }) => {
+      return Dog.findOne({ name, age, breed });
+    }    
   },
 
   Mutation: {
