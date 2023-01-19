@@ -70,7 +70,7 @@ function App() {
                 element={<Profile />}
               />
               <Route 
-                path="/dogList/:DogId" 
+                path="/dogList/:DogName" 
                 element={<SingleDog/>}
               />
             </Routes>
