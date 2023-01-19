@@ -22,7 +22,7 @@ const typeDefs = gql`
     users: [User]
     user(username: String!): User
     dogs: [Dog]
-    dog(dogId: ID!): Dog
+    dog(name: String!): Dog
     me: User 
   }
 

@@ -10,12 +10,12 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
-    dog: async () => {
+    dogs: async () => {
       return Dog.find();
     },
-      dog: async (parent, { name }) => {
+    dog: async (parent, { name }) => {
       return Dog.findOne({ name });
-    }    
+    }
   },
 
   Mutation: {
@@ -35,18 +35,17 @@ const resolvers = {
 
       if (!correctPw) {
         throw new AuthenticationError('Incorrect credentials');
-      } 
+      }
 
       const token = signToken(user);
 
       return { token, user };
     },
-  
-  addDog: async (parent, { name, age, breed }) => {
-    const dog = await Dog.create({ name, age, breed });
-    return dog;
+    addDog: async (parent, { name, age, breed }) => {
+      const dog = await Dog.create({ name, age, breed });
+      return dog;
+    }
   }
- } 
 }
 
 module.exports = resolvers;
