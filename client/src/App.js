@@ -9,10 +9,13 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Signup from './pages/Signup';
 import Login from './pages/Login';
-import  SingleDog from './pages/SingleDog';
-import Profile from './pages/Profile';
+import DogListPage from './pages/DogList';
+import SingleDog from './pages/SingleDog';
+import Adoption from './pages/Adoption';
+//import Profile from './pages/Profile';
+//import Signup from './pages/Signup';
+import AdoptionForm from './components/AdoptionForm';
 import DogList from './components/DogList';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -70,7 +73,12 @@ function App() {
                 element={<Profile />}
               />
               <Route 
-                path="/dogList/:DogName" 
+                path="/dogList" 
+                element={<DogList/>}
+              />
+            </Routes>
+            <Route 
+                path="/SingleDog/:DogName" 
                 element={<SingleDog/>}
               />
             </Routes>
