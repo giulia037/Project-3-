@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by the Tech Thoughts team.
+          by the k-9 adoptions team.
         </h4>
       </div>
     </footer>

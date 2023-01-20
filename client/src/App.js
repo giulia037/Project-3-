@@ -9,16 +9,13 @@ import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
+import Signup from './pages/Signup';
 import Login from './pages/Login';
-import DogListPage from './pages/DogList';
 import SingleDog from './pages/SingleDog';
-import Adoption from './pages/Adoption';
 //import Profile from './pages/Profile';
-//import Signup from './pages/Signup';
-import AdoptionForm from './components/AdoptionForm';
-import DogList from './components/DogList';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import DogList from './components/DogList';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -63,7 +60,7 @@ function App() {
               <Route 
                 path="/signup" 
                 element={<Signup />}
-              />
+              />{/* 
               <Route 
                 path="/me" 
                 element={<Profile />}
@@ -71,16 +68,12 @@ function App() {
               <Route 
                 path="/profiles/:username" 
                 element={<Profile />}
-              />
+              /> */}
               <Route 
-                path="/dogList" 
-                element={<DogList/>}
+                path="/SingleDog/:dogName" 
+                element={<SingleDog />}
               />
-            </Routes>
-            <Route 
-                path="/SingleDog/:DogName" 
-                element={<SingleDog/>}
-              />
+
             </Routes>
           </div>
           <Footer />
