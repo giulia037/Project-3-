@@ -7,7 +7,7 @@ Users can select one animal by clicking on it to view more information about tha
 
 ## Installation and Usage
 To install, start by installing the frontend and backend dependencies. While inside this directory, run 
-`npm Install` to install the node modules within the server and client folder. After that is complete, run the command `npm start`. To seed the database run `npm seed`. Run `npm run develop` to start the development server. The app should then run on localhost:3000. To create a production build, run `npm run build`. 
+`npm Install` to install the node modules within the server and client folder. After that is complete, run the command `npm start`. To seed the database run `npm run seed`. Run `npm run develop` to start the development server. The app should then run on localhost:3000. To create a production build, run `npm run build`. 
 
 ## Screen Capture 
 <img width="1433" alt="Screenshot 2023-01-23 at 10 54 56 AM" src="https://user-images.githubusercontent.com/115955681/214086051-7e3f0572-b5d1-46e0-937a-9251c86719db.png">
