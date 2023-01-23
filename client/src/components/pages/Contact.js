@@ -3,20 +3,27 @@ import React from 'react';
 export default function Contact() {
   return (
     <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+        <div className="header">
+      <h1>Contact</h1>
+      <div className="header">
+      <p>Reach out to us to find your new best friend</p>
+      </div>
+      </div>
+
+      <form className="form">
+        <input
+          name="email"
+          type="email"
+          placeholder="email"
+        />
+        <input
+          name="Leave us a message"
+          type="text"
+          placeholder="Leave us a message"
+        />
+        <button type="button" >Submit</button>
+      </form>
     </div>
   );
 }
+

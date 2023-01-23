@@ -24,12 +24,28 @@ export const QUERY_DOG = gql`
   }
 `;
 
-export const QUERY_SINGLE_DOG = gql`
-  query getSingleDog($DogName: Name!) {
-    Dog(dogName: $dogName) {
-      name
-    }
+export const QUERY_DOGS = gql`
+query Dogs {
+  dogs {
+    _id
+    age
+    breed
+    image_url
+    name
   }
+}
+`;
+
+export const QUERY_SINGLE_DOG = gql`
+query Dog($id: ID!) {
+  dog(_id: $id) {
+    _id
+    age
+    breed
+    image_url
+    name
+  }
+}
 `;
 
 export const QUERY_ME = gql`

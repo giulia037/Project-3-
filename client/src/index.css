@@ -1083,10 +1083,7 @@ a:hover {
   background-color: #31a9e1;
 }
 
-.card {
-  border: 1px solid #1a1a1a;
-  margin-bottom: 1rem;
-}
+
 
 .card .card-header {
   padding: 0.375rem;
@@ -1705,4 +1702,95 @@ label form [type='radio'] {
   .align-content-center-xl {
     align-content: center;
   }
+}
+
+.header {
+  height: 300px;
+  color: darkgreen;
+  text-align: center;
+  margin-top: 7px;
+    left: 10px;
+    top: 0px;
+    padding-top:10px; 
+    background-image: url("./components/screenshot_2023-01-22_at_6.34.18_pm.png");
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.navbar {
+  list-style-type: none;
+  border-bottom: 1px white;
+  display: inline;
+  padding: 8px;
+  background-color: #dddddd;
+  color: darkblue;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 300px;
+  height: 400px;
+}
+.card-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 300px;
+}
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: palevioletred;
+  color: white;
+}
+.container2{
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.card-img-top{
+  height: 200px;
 }

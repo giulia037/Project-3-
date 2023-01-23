@@ -5,6 +5,7 @@ const dogSchema = new Schema({
   name: {
     type: String,
     required: true,
+
   },
   age: {
     type: Number,
@@ -14,6 +15,10 @@ const dogSchema = new Schema({
     type: String,
     required: true,
   },
+  image_url: {
+    type: String,
+   required: true,
+  } 
  
 });
 

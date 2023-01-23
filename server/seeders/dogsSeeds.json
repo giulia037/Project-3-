@@ -2,33 +2,39 @@
   {
     "name": "Wiggles",
     "age": 1,
-    "breed": "Corgi"
+    "breed": "Corgi",
+    "image_url": "https://www.purina-arabia.com/sites/default/files/styles/ttt_image_510/public/2021-02/BREED%20Hero%20Mobile_0004_welsh_corgi_pembroke.jpg?itok=OUx5d899"
   },
   {
     "name": "Sugar",
     "age": 3,
-    "breed": "Maltese"
+    "breed": "Maltese",
+    "image_url": "https://thehappypuppysite.com/wp-content/uploads/2016/09/The-Maltese-HP-long.jpg"
   },
   {
     "name": "Scrappy",
     "age": 2,
-    "breed": "Chihuahua"
+    "breed": "Chihuahua",
+    "image_url": "https://post.bark.co/wp-content/uploads/2019/06/chihuahua-1024x634.png"
   },
   {
     "name": "Noodle",
     "age": 5,
-    "breed": "Goldendoodle"
+    "breed": "Goldendoodle",
+    "image_url": "https://puppyintraining.com/wp-content/uploads/mini-goldendoodle.jpg"
   },
   {
     "name": "Harley",
     "age": 3,
-    "breed": "Border Collie"
+    "breed": "Border Collie",
+    "image_url": "https://animalcorner.org/wp-content/uploads/2020/08/Border-Collie-2-1024x683.jpg"
   }
   ,
   {
     "name": "Pepper",
     "age": 4,
-    "breed": "Jack Russell Terrier"
+    "breed": "Jack Russell Terrier",
+    "image_url": "https://barkdogbar.com/wp-content/uploads/2022/08/Jack-Russell.jpg"
   }
   
 ]

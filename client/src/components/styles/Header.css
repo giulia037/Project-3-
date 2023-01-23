@@ -1,6 +1,9 @@
 .header {
-  background: #f9b713;
+  background: aqua;
   height: 200px;
+  color: white;
+  text-align: center;
+  text-align: center;
 }
 
 .header h1 {

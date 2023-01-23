@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Adoption() {
+export default function Doggie() {
   return (
     <div>
-      <h1>Adoption Form</h1>
+      <h1>Doggie List</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
         molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet

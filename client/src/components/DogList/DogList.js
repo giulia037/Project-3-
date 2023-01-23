@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
-import Adoption from '../pages/Adoption';
 import NavTabs from '../NavTabs';
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
 import SingleDog from '../pages/SingleDog'
+import About from '../pages/About';
+import Doggie from '../pages/Doggie';
+import Contact from '../pages/Contact';
 
 export default function DogList() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  // const [currentPage, setCurrentPage] = useState('Home');
 
 
   
-  const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    if (currentPage === 'Adoption') {
-      return <Adoption />;
-    }
-    if (currentPage === 'SingleDog') {
-      return <SingleDog />;
-    }
-  };
+  // const renderPage = () => {
+  //   if (currentPage === 'Home') {
+  //     return <Home />;
+  //   }
+  //   if (currentPage === 'SingleDog') {
+  //     return <SingleDog />;
+  //   }
+  //   if (currentPage === 'About') {
+  //     return <About />;
+  //   }
+  //   if (currentPage === 'Doggie') {
+  //     return <Doggie />;
+  //   }
+  //   if (currentPage === 'Contact') {
+  //     return <Contact />;
+  //   }
+  // };
 
-  const handlePageChange = (page) => setCurrentPage(page)
-
+  
   return (
     <div>
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      
     </div>
   );
 }
